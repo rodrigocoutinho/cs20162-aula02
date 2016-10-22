@@ -11,18 +11,19 @@ import static org.junit.Assert.*;
  *
  * @author Shakaw
  */
-public class Propriedade153Test {
+public class ProdutoTest {
     
-    public Propriedade153Test() {
-    }
-
     /**
-     * Test of obter method, of class Propriedade153.
+     * Test of obter method, of class Produto.
      */
     @Test
     public void testObter() {
+        Produto.obter(4,2);
+        Produto.obter(2,4);
+        assertEquals(6,Produto.obter(4,2),0);
+        assertEquals(10,Produto.obter(6,2),0);
+        assertEquals(4,Produto.obter(2,4),0);
         
-        Propriedade153.obter(2);
     }
     
 }

@@ -1,19 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
  */
 package br.ufg.inf.aula02;
-
-import static br.ufg.inf.aula02.SomaNaturais.produto;
-
 
 /**
  *
  * @author Rodrigo
  */
 public class Potencia {
-    
+
     /**
      * @param x : Base
      * @param y : expoente
@@ -24,10 +20,10 @@ public class Potencia {
         int i = 1;
 
         while (i <= y) {
-            potencia = produto(potencia, x);
+            potencia = Produto.obter(potencia, x);
             i = i + 1;
         }
         return potencia;
     }
-    
+
 }

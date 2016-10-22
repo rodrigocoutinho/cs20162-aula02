@@ -1,31 +1,39 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
  */
 package br.ufg.inf.aula02;
 
 /**
  *
- * @author Shakaw
+ * @author Rodrigo
  */
 public class CrivoEratostenes {
-     /**
-     * @param a :
-     * @param n :
+
+    /**
+     * @param n : quantidade de numeros para saber se é primo
+     * @param a : tamanho do vetor
+     * @return : retorna a sequencia
      */
-    public static void obter(int a, int n) {
-        int i = 2;
-        while (i <= n / 2) {
-            if (a == 0) {
-                int c = i + i;
+    public static boolean obter(int n, int[] a) {
+        int i = 2, c = 0;
+
+        if (n <= 1) {
+            throw new IllegalArgumentException("Número inválido.");
+        }
+
+        while (i <= (n / 2)) {
+            if (a[i] == 0) {
+                c = i + i;
                 while (c <= n) {
-                    a = 1;
-                    c = c + i;
+                    a[c] = 1;
+                    c++;
                 }
             }
-            i = i + 1;
+            i++;
         }
+
+        return (c == i);
     }
-    
+
 }

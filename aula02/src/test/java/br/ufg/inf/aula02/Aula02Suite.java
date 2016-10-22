@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
+ * Creative Commons Attribution 4.0 International License.
  */
 package br.ufg.inf.aula02;
 
